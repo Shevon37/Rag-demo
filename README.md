@@ -16,7 +16,6 @@ pip install langchain pypdf rapidocr-onnxruntime modelscope transformers faiss-c
 
 1、使用本地部署vllm、ollama或使用服务商提供api接入llm
 
-```
 
 2、运行indexer.py，解析pdf生成向量库
 
