@@ -14,11 +14,8 @@ pip install langchain pypdf rapidocr-onnxruntime modelscope transformers faiss-c
 
 ## 用法
 
-1，启动vllm的openai兼容server：
+1、使用本地部署vllm、ollama或使用服务商提供api接入llm
 
-```
-export VLLM_USE_MODELSCOPE=True
-python -m vllm.entrypoints.openai.api_server --model 'qwen/Qwen-7B-Chat-Int4' --trust-remote-code -q gptq --dtype float16 --gpu-memory-utilization 0.6
 ```
 
 2、运行indexer.py，解析pdf生成向量库
